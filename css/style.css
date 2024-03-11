@@ -27,6 +27,7 @@ body {
     transform: translateY(-5vh);
     height: 90vh;
     width: 90%;
+    max-width: 2100px;
     margin: 0 auto;
     /* debug */
     background-color: blue;

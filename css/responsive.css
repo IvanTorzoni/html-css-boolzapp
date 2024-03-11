@@ -1,0 +1,47 @@
+
+/* media query for tablet */
+@media screen and (max-width: 768px) {
+    .header-view{
+        display: none;
+        height: 0;
+    }
+
+    .boolzap-container{
+        transform: translateY(0);
+        height: 100vh;
+        width: 100%;
+    }
+
+    .left-notification, .left-search{
+        display: none;
+    }
+
+    .left-contacts{
+        height: 90%;
+        overflow-y: hidden;
+    }
+
+    .boolzap-left{
+        width: 10%;
+    }
+    
+    .boolzap-right{
+        width: 90%;
+    }
+
+    .right-messages-container{
+        overflow-y: hidden;
+    }
+}
+/* media query for tablet */
+
+/* media query for smartphone */
+@media screen and (max-width: 425px) {
+    .boolzap-left{
+        display: none;
+    }
+
+    .boolzap-right{
+        width: 100%;
+    }
+}
