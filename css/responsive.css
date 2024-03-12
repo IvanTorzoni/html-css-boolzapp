@@ -6,7 +6,15 @@
         width: 100%;
         margin: 0 auto;
     }
-
+    
+    .boolzap-left{
+        width: 100px;
+    }
+    
+    .boolzap-right{
+        width: calc(100% - 100px);
+    }
+    
     .left-notification, .left-search{
         display: none;
     }
@@ -15,12 +23,25 @@
         height: calc(100% - 100px);
     }
 
-    .boolzap-left{
-        width: 100px;
+
+    .msg-function, .name-and-bio, .time {
+        display: none;
     }
-    
-    .boolzap-right{
-        width: calc(100% - 100px);
+
+    .left-header, .contact{
+        padding: 10px;
+    }
+
+    .contact{
+        padding: 30px 10px;
+    }
+
+    .message-box{
+        width: 80%;
+    }
+
+    .msg-content{
+        width: 80%;
     }
 
 }
