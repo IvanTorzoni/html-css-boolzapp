@@ -4,6 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    max-height: 80px;
+    border-radius: 50%;
 }
 
 /* BODY BACKGROUNG COLOR*/
@@ -12,7 +18,29 @@ body {
 }
 /* /BODY BACKGROUNG COLOR*/
 
+/* COMMON PROPERTIES */
+.left-header, .right-header, .right-footer{
+    height: 100px;
+    background-color: rgba(234, 234, 234, 1);
+}
 
+.left-header, .left-notification, .left-search, .left-contacts, .right-header, .right-footer{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-header, .right-header{
+    justify-content: space-between;
+}
+
+.msg-function i, .contact-function i{
+    font-size: 20px;
+    color: grey;
+}
+/* /COMMON PROPERTIES */
+
+/* LAYOUT */
 /* CONTAINER FOR BOOLZAP STRUCTURE */
 .boolzap-container{
     display: flex;
@@ -20,9 +48,6 @@ body {
     width: 90%;
     max-width: 2500px;
     margin: 5vh auto;
-    /* debug */
-    background-color: blue;
-    border: 1px solid black;
 }
 /* /CONTAINER FOR BOOLZAP STRUCTURE */
 
@@ -30,57 +55,216 @@ body {
 .boolzap-left{
     display: flex;
     flex-direction: column;
-    /* debug */
-    width: 400px;
-    background-color: green;
+    width:400px;
 }
 
 .boolzap-right{
-    /* debug */
     width: calc(100% - 400px);
-    background-color: yellow;
 }
 /* /DIMENSION OF THE COLUMN IN THE CONTAINER */
 
-/* ELEMENTS DIMENSIONS */
-.left-header, .right-header, .right-footer{
-    height: 100px;
-    /* debug */
-    width: 100%;
-    background-color: aqua;
-    border: 1px solid black;
+/* /LAYOUT */
+
+
+/* LEFT COLUMN */
+/* HEADER AND ELEMENTS PROPERTIES*/
+
+.left-header{
+    border-right: 1px solid grey;
 }
 
+.msg-function{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+/* /HEADER AND ELEMENTS PROPERTIES*/
+
+/* NOTIFICATION AND ELEMENTS PROPERTIES*/
 .left-notification{
     height: 100px;
-    /* debug */
-    width: 100%;
-    background-color: red;
-    border: 1px solid black;
+    background-color: rgba(142, 218, 252, 1);
 }
 
+.left-notification i{
+    font-size: 20px;
+    color: rgba(160, 217, 243, 1);
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.left-notification a{
+    color: grey;
+}
+
+.left-notification .notification-content{
+    padding-left: 20px;
+}
+/* /NOTIFICATION AND ELEMENTS PROPERTIES*/
+
+/* SEARCH AND ELEMENTS PROPERTIES*/
 .left-search{
     height: 80px;
-    /* debug */
-    width: 100%;
-    background-color: blue;
-    border: 1px solid black;
+    padding: 10px;
+    background-color: rgba(250, 250, 250, 1);
 }
+
+.left-search i{
+    color: grey;
+    background-color: white;
+    padding: 9.9px 10px;
+}
+
+.left-search input{
+    border: none;
+    width: 100%;
+    background-color: white;
+    padding: 10px 10px;
+}
+/* /SEARCH AND ELEMENTS PROPERTIES */
+
+/* CONTACTS AND ELEMENTS PROPERTIES*/
 
 .left-contacts{
+    flex-direction: column;
     overflow-y: scroll;
     height: calc(100% - 280px);
-    /* debug */
-    width: 100%;
-    background-color: violet;
-    border: 1px solid black;
+    padding: 0;
+    background-color: white;
 }
 
+.contact{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.contact:last-child{
+    border-bottom: none;
+}
+
+.name-and-bio p, .time{
+    color: lightgray;
+}
+
+.name-and-bio span, .contact-infos span{
+    font-weight: bold;
+}
+
+.name-and-bio, .time {
+    padding-top: 20px;
+}
+
+.name-and-bio p{
+    padding-top: 10px;
+}
+
+/* /CONTACTS AND ELEMENTS PROPERTIES*/
+
+/* /LEFT COLUMN */
+
+
+/* RIGHT COLUMN */
+/* HEADER AND ELEMENTS PROPERTIES*/
+.contact-infos{
+    display: flex;
+    align-items: center;
+}
+
+.contact-infos div{
+    padding-left: 10px;
+}
+
+.contact-infos p{
+    padding-top: 10px;
+    color: grey;
+}
+
+.contact-function{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+/* /HEADER AND ELEMENTS PROPERTIES*/
+
+/* MESSAGES AND ELEMENTS PROPERTIES*/
 .right-messages-container{
     height: calc(100% - 200px);
     overflow-y: scroll;
-    /* debug */
-    width: 100%;
-    background-color: orange;
-    border: 1px solid black;
 }
+
+.right-messages-container{
+    background-image: url(../img/mine.jpg);
+}
+
+.message-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.msg-sent{
+    display: flex;
+    justify-content: end;
+}
+
+.msg-content {
+    display: flex;
+    width: 70%;
+    background-color: green;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.msg-hour{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: grey;
+}
+
+.msg-hour i{
+    text-align: end;
+}
+
+.msg-recive{
+    display: flex;
+    padding-top: 20px;
+}
+
+.msg-recive .msg-content{
+    background-color: white;
+}
+/* /MESSAGES AND ELEMENTS PROPERTIES*/
+
+/* FOOTER AND ELEMENTS PROPERTIES*/
+.right-footer{
+    justify-content: space-between;
+}
+
+.right-footer i{
+    color: darkgray;
+    font-size: 20px;
+}
+
+.right-footer input{
+    border: none;
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* FOOTER AND ELEMENTS PROPERTIES*/
+
+/* /RIGHT COLUMN */
+
