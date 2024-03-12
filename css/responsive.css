@@ -14,7 +14,7 @@
     .boolzap-right{
         width: calc(100% - 100px);
     }
-    
+
     .left-notification, .left-search{
         display: none;
     }
@@ -47,7 +47,7 @@
 }
 /* media query for tablet */
 
-/* media query for smartphone */
+/* media query for mobile*/
 @media screen and (max-width: 425px) {
     .boolzap-left{
         display: none;
@@ -56,4 +56,29 @@
     .boolzap-right{
         width: 100%;
     }
+
+    .contact-function{
+        display: none;
+    }
+
+    .contact-infos div {
+        padding-left: 20px;
+    }
+
+    .message-box{
+        width: 90%;
+    }
+
+    .right-footer {
+        justify-content: center;
+    }
+
+    .right-footer i{
+        display: none;
+    }
+
+    .right-footer input {
+        width: 100%;
+    }
 }
+/* /media query for mobile*/
