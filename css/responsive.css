@@ -1,15 +1,10 @@
 
 /* media query for tablet */
 @media screen and (max-width: 768px) {
-    .header-view{
-        display: none;
-        height: 0;
-    }
-
     .boolzap-container{
-        transform: translateY(0);
         height: 100vh;
         width: 100%;
+        margin: 0 auto;
     }
 
     .left-notification, .left-search{
