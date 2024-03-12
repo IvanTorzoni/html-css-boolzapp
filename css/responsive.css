@@ -17,21 +17,17 @@
     }
 
     .left-contacts{
-        height: 90%;
-        overflow-y: hidden;
+        height: calc(100% - 100px);
     }
 
     .boolzap-left{
-        width: 10%;
+        width: 100px;
     }
     
     .boolzap-right{
-        width: 90%;
+        width: calc(100% - 100px);
     }
 
-    .right-messages-container{
-        overflow-y: hidden;
-    }
 }
 /* media query for tablet */
 

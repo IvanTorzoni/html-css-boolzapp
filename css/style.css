@@ -27,7 +27,7 @@ body {
     transform: translateY(-5vh);
     height: 90vh;
     width: 90%;
-    max-width: 2100px;
+    max-width: 2500px;
     margin: 0 auto;
     /* debug */
     background-color: blue;
@@ -40,20 +40,20 @@ body {
     display: flex;
     flex-direction: column;
     /* debug */
-    width: 30%;
+    width: 400px;
     background-color: green;
 }
 
 .boolzap-right{
     /* debug */
-    width: 70%;
+    width: calc(100% - 400px);
     background-color: yellow;
 }
 /* /DIMENSION OF THE COLUMN IN THE CONTAINER */
 
 /* ELEMENTS DIMENSIONS */
 .left-header, .right-header, .right-footer{
-    height: 10%;
+    height: 100px;
     /* debug */
     width: 100%;
     background-color: aqua;
@@ -61,7 +61,7 @@ body {
 }
 
 .left-notification{
-    height: 10%;
+    height: 100px;
     /* debug */
     width: 100%;
     background-color: red;
@@ -69,7 +69,7 @@ body {
 }
 
 .left-search{
-    height: 5%;
+    height: 80px;
     /* debug */
     width: 100%;
     background-color: blue;
@@ -78,7 +78,7 @@ body {
 
 .left-contacts{
     overflow-y: scroll;
-    height: 75%;
+    height: calc(100% - 280px);
     /* debug */
     width: 100%;
     background-color: violet;
@@ -86,7 +86,7 @@ body {
 }
 
 .right-messages-container{
-    height: 80%;
+    height: calc(100% - 200px);
     overflow-y: scroll;
     /* debug */
     width: 100%;
